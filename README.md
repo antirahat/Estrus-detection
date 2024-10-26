@@ -19,3 +19,5 @@ Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC7302546/
 
 Data collected from newly implemented IMU: 
 ![image](https://github.com/user-attachments/assets/df41f9da-df5e-4b28-8263-2d1a276bb3fa)
+
+ESP32 ble configure: https://www.instructables.com/ESP32-BLE-Android-App-Arduino-IDE-AWESOME/
