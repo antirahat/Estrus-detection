@@ -17,7 +17,5 @@ This is was collected over the span of 24 hour from 1 cow.
 Charts illustrating successful estrus detection in subsequent 6 months (August-December 2019). Penultimate estrus (on December 4), was not measured due to a power outage in the farm buildings. 
 Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC7302546/
 
-Data collected from newly implemented IMU: 
-![image](https://github.com/user-attachments/assets/df41f9da-df5e-4b28-8263-2d1a276bb3fa)
-
-ESP32 ble configure: https://www.instructables.com/ESP32-BLE-Android-App-Arduino-IDE-AWESOME/
+For algorithm development, exploring this paper: https://www.mdpi.com/2624-7402/6/3/128
+Dataset used here (labeled): https://figshare.com/articles/dataset/Accelerometer_and_Gryscope_Sensor_Data_from_Cows/25920463
