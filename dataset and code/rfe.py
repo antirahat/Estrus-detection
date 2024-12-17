@@ -34,3 +34,31 @@ df_combine = pd.concat([filtered_gyro1s,filtered_gyro3s, filtered_gyro5s], ignor
 output_file = 'combined.csv'
 df_combine.to_csv(output_file, index = False)
 
+data = df_combine.drop(columns=['date', 'x_var'])
+
+data['label'] = data['label'].astype(int)
+
+x = data.drop(columns=['label'])
+y = data['label']
+
+scaler=MinMaxScaler()
+x_scaled = scaler.fit_transform(x)
+
+x_train, x_test, y_train, y_test = train_test_split(x_scaled, y, test_size=0.2, random_state= 42, stratify=y)
+
+rfe = RandomForestClassifier(
+    n_estimators=1000,      # Number of trees
+    max_depth=10,           # Depth of the trees
+    max_features=6,         # Features per split
+    random_state=42
+)
+
+# Train the model
+rfe.fit(x_train, y_train)
+
+# Predictions
+y_pred = rfe.predict(x_test)
+
+print("Random Forest Ensemble:")
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Classification Report:\n", classification_report(y_test, y_pred))
