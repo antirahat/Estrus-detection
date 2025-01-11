@@ -7,8 +7,8 @@
 
 
 // Wi-Fi credentials
-const char* ssid = "I_Farmer_NBO";
-const char* password = "iFarmer_2018";
+const char* ssid = "Rahat";
+const char* password = "rahat12345";
 
 String macAddress = WiFi.macAddress();
 
@@ -83,7 +83,7 @@ void loop() {
     reconnectMQTT();
   }
   client.loop();
-
+  //delay(100); //prevent watchdog timer 
   sensors_event_t a, g, temp;
   mpu.getEvent(&a, &g, &temp);
 
