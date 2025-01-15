@@ -7,8 +7,8 @@
 
 
 // Wi-Fi credentials
-const char* ssid = "Rahat";
-const char* password = "rahat12345";
+const char* ssid = "I_Farmer_NBO";
+const char* password = "iFarmer_2018";
 
 String macAddress = WiFi.macAddress();
 
@@ -87,13 +87,19 @@ void loop() {
   sensors_event_t a, g, temp;
   mpu.getEvent(&a, &g, &temp);
 
-  String payload = String("{\"accel\":{\"x\":") + a.acceleration.x +
-                   ",\"y\":" + a.acceleration.y + 
-                   ",\"z\":" + a.acceleration.z + 
-                   "},\"gyro\":{\"x\":" + g.gyro.x +
-                   ",\"y\":" + g.gyro.y + 
-                   ",\"z\":" + g.gyro.z + "}}" + 
-                   ", \"temp\":" + temp.temperature ;
+  String payload = "{";
+  payload += "\"accel\":{";
+  payload += "\"x\":" + String(a.acceleration.x, 2) + ",";
+  payload += "\"y\":" + String(a.acceleration.y, 2) + ",";
+  payload += "\"z\":" + String(a.acceleration.z, 2);
+  payload += "},";
+  payload += "\"gyro\":{";
+  payload += "\"x\":" + String(g.gyro.x, 2) + ",";
+  payload += "\"y\":" + String(g.gyro.y, 2) + ",";
+  payload += "\"z\":" + String(g.gyro.z, 2);
+  payload += "},";
+  payload += "\"temp\":" + String(temp.temperature, 2);
+  payload += "}";
 
   if (client.publish(topic.c_str(), payload.c_str())) {
     Serial.println("Message sent: " + payload);
@@ -101,5 +107,4 @@ void loop() {
     Serial.println("Message failed.");
   }
 
-  delay(1000); // Adjust data sending frequency - now 1s
-}
+  delay(1000);
