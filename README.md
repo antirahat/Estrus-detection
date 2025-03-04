@@ -1,6 +1,8 @@
 # Estrus-detection
 
-By using the device we're are trying to identify cattle's estrus from movement. Along with that we are trying detect disease after calving from the movement data. This repository contains necessary information regarding the development. 
+Through cowdy we aim to detect precise estrus period, potential disease and abnormality among your cattle and ensure high production yield of your livestock farm. 
+
+## How does it works
 
 According to hypothesis that data should look like this: 
 ![image](https://github.com/user-attachments/assets/efcfbe5c-7f07-45d4-86e1-e4ede8fe1a5e)
