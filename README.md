@@ -24,3 +24,7 @@ Charts illustrating successful estrus detection in subsequent 6 months (August-D
 1. https://pmc.ncbi.nlm.nih.gov/articles/PMC7302546/
 2. For algorithm development, exploring this paper: https://www.mdpi.com/2624-7402/6/3/128
 3. Dataset used here (labeled): https://figshare.com/articles/dataset/Accelerometer_and_Gryscope_Sensor_Data_from_Cows/25920463
+
+## Contact
+
+For any additional query contact me at - rahatalmamun20@gmail.com
