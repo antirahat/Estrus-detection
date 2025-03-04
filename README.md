@@ -18,8 +18,9 @@ Data taken by devices from iFarmer:
 ![image](https://github.com/user-attachments/assets/66da26b9-7c79-4b17-98b3-e9f3aedfd021)
 
 
-Charts illustrating successful estrus detection in subsequent 6 months (August-December 2019). Penultimate estrus (on December 4), was not measured due to a power outage in the farm buildings. 
-Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC7302546/
+Charts illustrating successful estrus detection in subsequent 6 months (August-December 2019). Penultimate estrus (on December 4), was not measured due to a power outage in the farm buildings.
 
-For algorithm development, exploring this paper: https://www.mdpi.com/2624-7402/6/3/128
-Dataset used here (labeled): https://figshare.com/articles/dataset/Accelerometer_and_Gryscope_Sensor_Data_from_Cows/25920463
+## Resources:
+1. https://pmc.ncbi.nlm.nih.gov/articles/PMC7302546/
+2. For algorithm development, exploring this paper: https://www.mdpi.com/2624-7402/6/3/128
+3. Dataset used here (labeled): https://figshare.com/articles/dataset/Accelerometer_and_Gryscope_Sensor_Data_from_Cows/25920463
